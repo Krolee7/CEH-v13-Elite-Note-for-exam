@@ -58,6 +58,12 @@ Masks out arp, icmp, dns, or other protocols and allows you to view the traffic 
 promiscuous mode activity
 nmap --script=sniffer-detect [Target IP Address/Range of IP addresses]
 
+Some online anonymizers include: 
+▪ https://anonymize.com 
+▪ https://2ip.io/anonim ▪ https://www.kproxy.com 
+▪ https://zendproxy.com ▪ https://proxify.com 
+▪ https://www.proxysite.com ▪ http://anonymouse.org 
+▪ https://proxyscrape.com
 
 
 
