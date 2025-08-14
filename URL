@@ -15,3 +15,47 @@ DHCP attack tools are listed below:
 ▪ mitm6 (https://github.com) 
 ▪ Ettercap (https://www.ettercap-project.org) 
 ▪ Gobbler (https://sourceforge.net
+
+Display filter in wireshark
+▪ Display Filtering by Protocol Example: Type the protocol in the filter box: arp, http, tcp, udp, dns, ip
+
+▪ Monitoring the Specific Ports o tcp.port==23
+o ip.addr==192.168.1.100 machine ip.addr==192.168.1.100 && tcp.port==23
+
+▪ Filtering by Multiple IP Addresses 
+o ip.addr == 10.0.0.4 or ip.addr == 10.0.0.5
+
+▪ Filtering by IP Address 
+o ip.addr == 10.0.0.4
+
+▪ tcp.flags.reset==1 
+-Displays all TCP resets
+
+▪ udp contains 33:27:58 
+-Sets a filter for the hex values of 0×33 0×27 0×58 at any offset
+▪ http.request 
+-Displays all HTTP GET requests
+
+▪ tcp.analysis.retransmission 
+-Displays all retransmissions in the trace
+
+▪ tcp contains traffic 
+-Displays all TCP packets that contain the word “traffic” ▪ !(arp or icmp or dns)
+Masks out arp, icmp, dns, or other protocols and allows you to view the traffic of your interest
+
+▪ tcp.port == 4000 
+-Sets a filter for any TCP packet with 4000 as a source or destination port
+
+▪ tcp.port eq 25 or icmp 
+-Displays only SMTP (port 25) and ICMP traffic
+
+▪ ip.src==192.168.0.0/16 and ip.dst==192.168.0.0/16
+-Displays only traffic in the LAN (192.168.x.x), between workstations and servers—no Internet
+
+▪ ip.src != xxx.xxx.xxx.xxx && ip.dst != xxx.xxx.xxx.xxx && sip 
+-Filters by a protocol (e.g., SIP) and filters out unwanted Ips
+
+promiscuous mode activity
+nmap --script=sniffer-detect [Target IP Address/Range of IP addresses]
+
+
