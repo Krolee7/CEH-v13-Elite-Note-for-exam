@@ -65,6 +65,15 @@ Some online anonymizers include:
 ▪ https://www.proxysite.com ▪ http://anonymouse.org 
 ▪ https://proxyscrape.com
 
+XSS
+<script>onload=window.location='http://www.certifiedhacker.com‘</script>
+
+detect WAF
+o WhatWaf (https://github.com) 
+o Nmap (https://nmap.org) 
+o Web Application Firewall Detector (https://pentest-tools.com) 
+o SHIELDFY Web Application Firewall Detector (https://github.com) 
+o Advanced Web application firewall detection (https://www.nmmapper.com)
 
 
 
